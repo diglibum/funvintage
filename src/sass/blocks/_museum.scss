@@ -1,0 +1,39 @@
+.museum {
+    &__title {
+        text-transform: none;
+        margin-bottom: 0;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(52px, auto));
+        grid-auto-rows: minmax(198px, auto);
+        grid-column-gap: 15px;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+
+    &__item {
+        max-width: 100%;
+        min-width: 238px;
+        height: 198px;
+        background: url(../img/monitor.png) 100%/cover no-repeat;
+        padding: 70px 20px 0 20px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: var(--secondary-color);
+        text-align: center;
+    }
+
+    &__video {
+        width: 100%;
+        height: 490px;
+        margin-top: 15px;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

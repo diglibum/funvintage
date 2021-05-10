@@ -1,0 +1,54 @@
+.slider {
+    position: relative;
+
+    &__wrapper {
+        overflow: hidden;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-items: flex-start;
+        transition: all .5s;
+    }
+
+    &__item {
+        position: relative;
+        min-width: 213px;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__controls {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        &-prev {
+            position: absolute;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+
+            img {
+                transform: rotate(90deg);
+            }
+        }
+
+        &-next {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+
+            img {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

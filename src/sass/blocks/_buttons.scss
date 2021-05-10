@@ -1,0 +1,20 @@
+.btn {
+    display: inline-table;
+    padding: 15px 35px;
+    background: var(--main-color);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    &-secondary {
+        background-color: var(--secondary-color);
+    }
+
+    &-third {
+        background-color: var(--third-color);
+        color: #000;
+    }
+}

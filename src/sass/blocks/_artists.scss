@@ -1,0 +1,36 @@
+.artists {
+    background: var(--secondary-bg-color, #E8EFFF);
+    padding-top: 55px;
+
+    &__slider {
+        .slider {
+            &__wrapper {
+                margin-left: 80px;
+                margin-right: 80px;
+                margin-top: 15px;
+            }
+
+            &__content {
+                margin-top: 95px;
+            }
+
+            &__item {
+                background: #fff;
+                border-radius: 0px 0px 25px 25px;
+                min-height: 185px;
+                padding: 110px 10px 5px 10px;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+
+                img {
+                    position: absolute;
+                    top: -50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

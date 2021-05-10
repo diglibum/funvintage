@@ -1,0 +1,35 @@
+@mixin rounded-block {
+    border-radius: 25px;
+    padding: 20px;
+}
+
+@mixin rounded-forms {
+    padding: 15px 20px;
+    border: 1px solid #8BC2F8;
+    border-radius: 10px;
+}
+
+@mixin down-arrow {
+    &::after {
+        position: absolute;
+        right: 20px;
+        bottom: 50%;
+        content: "";
+        width: 2px;
+        height: 20px;
+        transform: translateY(50%) rotate(38deg);
+        background: #8BC2F8;
+    }
+
+    &::before {
+        position: absolute;
+        right: 33px;
+        bottom: 50%;
+        content: "";
+        width: 2px;
+        height: 20px;
+        transform: translateY(50%) rotate(-38deg);
+        background: #8BC2F8;
+
+    }
+}
