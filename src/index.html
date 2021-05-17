@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,6 +42,7 @@
 
         <section class="banner">
             <div class="container">
+                <h2>Научное шоу по истории</h2>
                 <picture>
                     <source media="(max-width:320px)" srcset="img/banner/top_banner_w380.png">
                     <source media="(max-width:756px)" srcset="img/banner/top_banner_w800.png">
@@ -57,8 +58,8 @@
                         <img src="img/kids.png" alt="Наша цель – пробудить интерес к истории.">
                     </div>
                     <div class="mission__content">
-                        Наша цель – <span>пробудить интерес к истории.</span>
-                        <br><br>
+                        <h2>Наша цель – <span>пробудить интерес к истории.</span></h2>
+                        
                         Программа «Музей в чемодане» была включена в московскую государственную программу Олимпиада «Музеи. Парки. Усадьбы»и получала только позитивные отзывы. 
                     </div>
                     <div class="mission__mobile-img">
@@ -86,7 +87,7 @@
                         <div class="museum__item">в любой <br>точке мира</div>
                     </div>
                     <div class="museum__video">
-                        <iframe src="https://www.youtube.com/embed/BPoo2sflmew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/BPoo2sflmew" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
             </div>
         </section>
@@ -359,7 +360,7 @@
                 <div class="questions-more">
                     <h2 class="subtitle subtitle-center subtitle-secondary questions__subtitle">Остались вопросы?</h2>
                     <p>мы перезвоним</p>
-                    <div class="btn btn-third questions-more__btn">заказать звонок</div>
+                    <div class="btn btn-third questions-more__btn" data-modal="feedback">заказать звонок</div>
                 </div>
             </div>
         </section>
@@ -470,7 +471,7 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <select name="addProgram" id="addProgram">
+                        <select  id="addProgram">
                             <option value="-1" disabled selected>Добавить программу </option>
                             <option>МУЗЕЙ В САКВОЯЖЕ. История медицины и гигиены.</option>
                             <option>МУЗЕЙ В CУНДУЧКЕ. Старинные игры. (4 программы — 8 800 руб.)</option>
@@ -529,7 +530,7 @@
                     <input class="modal-form__input modal-form__input_rounded" name="phone" placeholder="Телефон" required> 
                     <input class="modal-form__input modal-form__input_rounded" name="email" placeholder="e-mail" type="email" required> 
                     <div class="modal-form__btn-wrapper">
-                        <button class="btn btn-third modal-form__btn">заказать звонок</button>
+                        <button class="btn btn-third modal-form__btn" data-modal="feedback">заказать звонок</button>
                     </div>
                     <div class="modal__footnote">
                         <p>
