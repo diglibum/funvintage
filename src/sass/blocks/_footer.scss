@@ -1,54 +1,47 @@
 .footer {
-    background: var(--third-color, #FFDE6C);
-    min-height: 280px;
-    padding-top: 30px;
-    font-size: 18px;
-    line-height: 26px;
+  background: $third-color;
+  min-height: 280px;
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 26px;
+
+  a {
+    color: $dark;
+    text-decoration: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-items: flex-start;
+  }
+
+  &__logo {
+    margin-top: 17px;
+    margin-right: 70px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__socials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, auto));
+    justify-content: start;
+    align-items: flex-start;
+    align-content: flex-start;
+    grid-gap: 25px;
+    margin-top: 30px;
+    font-size: 28px;
 
     a {
-        color: #000000;
-        text-decoration: none;
+      color: $dark;
+      text-decoration: none;
     }
+  }
 
-    &__wrapper {
-        display: flex;
-        justify-items: flex-start;
-    }
-
-    &__logo {
-        margin-top: 17px;
-        margin-right: 70px;
-    }
-
-    &__contacts {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    // &__phone {
-    //     font-size: 36px;
-    //     line-height: 44px;
-    //     margin-top: 20px;
-    // }
-
-    &__socials {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25px, auto));
-        justify-content: start;
-        align-items: flex-start;
-        align-content: flex-start;
-        grid-gap: 25px;
-        margin-top: 30px;
-        font-size: 28px;
-
-        a {
-            color: #000;
-            text-decoration: none;
-        }
-    }
-
-    &__privacy {
-        margin-top: 30px;
-    }
+  &__privacy {
+    margin-top: 30px;
+  }
 }

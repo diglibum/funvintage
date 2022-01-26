@@ -1,24 +1,24 @@
 .questions {
-    background: var(--secondary-bg-color, #E8EFFF);
-    padding-top: 60px;
+  background: $secondary-bg-color;
+  padding-top: 60px;
 
-    .container {
-        padding-left: 80px;
-        padding-right: 80px;
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  &-more {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 24px;
+
+    p {
+      margin-top: 17px;
     }
 
-    &-more {
-        padding-top: 80px;
-        text-align: center;
-        font-size: 24px;
-
-        p {
-            margin-top: 17px;
-        }
-
-        &__btn {
-            display: inline-block;
-            margin-top: 12px;
-        }
+    &__btn {
+      display: inline-block;
+      margin-top: 12px;
     }
+  }
 }

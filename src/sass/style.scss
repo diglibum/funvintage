@@ -1,64 +1,53 @@
-@import 'libs/bootstrap-reboot.min';
-// @import 'libs/bootstrap-grid.min';
-
-@import 'base/fonts';
-@import 'base/variables';
-@import 'base/mixins';
+@import "libs/bootstrap-reboot.min";
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
 
 * {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-size: 20px;
-    line-height: 27px;
-}
-
-:root {
-    --main-color: #29C188;
-    --secondary-color: #46C2F5;
-    --third-color: #FFDE6C;
-    --secondary-bg-color: #E8EFFF;
+  font-size: 20px;
+  line-height: 27px;
 }
 
 .container {
-    width: 1140px;
-    margin: 0 auto;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .visible {
-    display: block !important;
+  display: block !important;
 }
 
 input,
 select,
 textarea {
-    outline: none;
+  outline: none;
 }
 
-@import 'blocks/buttons';
-@import 'blocks/header';
-@import 'blocks/banner';
-@import 'blocks/titles';
-@import 'blocks/mission';
-@import 'blocks/museum';
-@import 'blocks/programs';
-@import 'blocks/block-list';
-@import 'blocks/gallery';
-@import 'blocks/slider';
-@import 'blocks/artists';
-@import 'blocks/roller';
-@import 'blocks/questions';
-@import 'blocks/reviews';
-@import 'blocks/footer';
-@import 'blocks/modal';
-@import 'blocks/forms';
-
-
-@import 'blocks/media';
+@import "blocks/buttons";
+@import "blocks/header";
+@import "blocks/banner";
+@import "blocks/titles";
+@import "blocks/mission";
+@import "blocks/museum";
+@import "blocks/programs";
+@import "blocks/block-list";
+@import "blocks/gallery";
+@import "blocks/slider";
+@import "blocks/artists";
+@import "blocks/roller";
+@import "blocks/questions";
+@import "blocks/reviews";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/forms";
+@import "blocks/media";

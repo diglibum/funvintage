@@ -1,43 +1,41 @@
 .mission {
-    min-height: 264px;
-    padding-top: 30px;
+  min-height: 264px;
+  padding-top: 30px;
 
-    &__wrapper {
-        display: flex;
+  &__wrapper {
+    display: flex;
+  }
+
+  &__image {
+    width: 480px;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 20px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      top: -54px;
     }
+  }
 
-    &__image {
-        width: 480px;
-        position: relative;
-        flex-shrink: 0;
-        margin-right: 20px;
+  &__content,
+  &__content h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
 
-        img {
-            position: absolute;
-            width: 100%;
-            top: -54px;
-        }
+    span {
+      font-weight: 600;
+      text-transform: uppercase;
     }
+  }
 
-    &__content,
-    &__content h2 {
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: 400;
-        margin-bottom: 1.5rem;
-
-        span {
-            font-weight: 600;
-            text-transform: uppercase;
-        }
+  &__mobile {
+    &-img,
+    &-text {
+      display: none;
     }
-
-    &__mobile {
-
-        &-img,
-        &-text {
-            display: none;
-        }
-
-    }
+  }
 }

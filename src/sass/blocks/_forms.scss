@@ -1,65 +1,62 @@
 .form {
-    .dropdown {
-        position: relative;
+  .dropdown {
+    position: relative;
 
-        &__container {
-            position: absolute;
-            background: #fff;
-            width: 100%;
-            list-style-type: none;
-            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.20);
-            max-height: 0;
-            //opacity: 0;
-            overflow: hidden;
-            padding: 0;
-            transition: all .3s;
-        }
-
-        &__item {
-            padding: 8px 18px;
-            cursor: pointer;
-
-            &_selected {
-                background: #E8EFFF;
-            }
-
-            &_disabled {
-                color: #7e7e7e;
-            }
-        }
-
-        &__header {
-            position: relative;
-            margin-top: 35px;
-            cursor: pointer;
-            @include rounded-forms;
-            @include down-arrow;
-            padding-right: 70px;
-        }
-
-        &__show {
-            max-height: 100vh;
-            //opacity: 1;
-            padding: 20px 0;
-
-        }
-
-        &__hidden {
-            display: none !important;
-        }
-
-        select {
-            margin-top: 300px;
-        }
+    &__container {
+      position: absolute;
+      background: $light;
+      width: 100%;
+      list-style-type: none;
+      box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+      max-height: 0;
+      overflow: hidden;
+      padding: 0;
+      transition: all 0.3s;
     }
 
-    textarea,
-    input {
-        @include rounded-forms;
-        margin-top: 30px;
+    &__item {
+      padding: 8px 18px;
+      cursor: pointer;
+
+      &_selected {
+        background: $secondary-bg-color;
+      }
+
+      &_disabled {
+        color: $gray;
+      }
     }
 
-    button {
-        outline: none;
+    &__header {
+      position: relative;
+      margin-top: 35px;
+      cursor: pointer;
+      @include rounded-forms;
+      @include down-arrow;
+      padding-right: 70px;
     }
+
+    &__show {
+      max-height: 100vh;
+      padding: 20px 0;
+    }
+
+    &__hidden {
+      display: none !important;
+    }
+
+    select {
+      margin-top: 300px;
+    }
+  }
+
+  textarea,
+  input {
+    @include rounded-forms;
+    margin-top: 30px;
+  }
+
+  button {
+    outline: none;
+  }
 }
