@@ -1,8 +1,8 @@
-# Fun Vintage
+# Агентство детских праздников Fun Vintage - вёрстка
 
-Вёрстка лэндинга Агентства детских праздников
+![image](https://user-images.githubusercontent.com/42203392/151207393-bc7ac2b7-7e95-42bc-82aa-bf588dbf275c.jpg)
 
-Дизайн: https://www.figma.com/file/WewHwyjzOKmydyl3YkbgIm/FunVintage-site-20.11?node-id=0%3A1
+Figma: https://www.figma.com/file/WewHwyjzOKmydyl3YkbgIm/FunVintage-site-20.11?node-id=0%3A1
 
 ## Технологии:
 `HTML` `Scss` `JavaScript` `Gulp` `Webpack`
